@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/output.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="min-h-screen bg-[#3a4764]">
+    
+
+    <div class="flex text-white flex-row spartan justify-between pt-10 pl-5 pr-5">
+        <h1  class=" text-5xl">calc</h1>
+
+        <div class="flex flex-row mt-auto mb-auto">
+             <h1 class="text-slate-400" > <i>calculates incalculable...</i> </h1>
+        </div>
+    </div>
+
+    <div class="bg-[#181f32] overflow-hidden flex justify-end text-white spartan text-5xl pr-3 ml-auto mr-auto mt-10 h-24 rounded-xl w-[23rem]">
+            <h1 id="MAIN" class="mt-auto mb-auto "></h1>
+    </div>
+
+    <div class="grid  grid-cols-4 place-content-center pt-3 pb-3 min-h-[5rem] bg-[#252d44]  ml-auto mr-auto spartan text-5xl rounded-xl  mt-6 w-[23rem]">
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] ml-auto mr-auto  bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="7">7</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="8" >8</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="9" >9</button>     
+        <button class="h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-[rgb(100,114,153)] rounded-lg border-b-4 text-3xl  text-white border-b-[#424e74]" id="del" >DEL</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="4">4</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="5">5</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="6">6</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="+">+</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="1">1</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="2" >2</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="3" >3</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="-" >-</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id=".">.</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="0" >0</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] mb-4 ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="/" >/</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[4.5rem] ml-auto mr-auto bg-white rounded-lg border-b-4  text-[#454a57] border-b-slate-400" id="x">x</button> 
+        <button class=" h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[10.1rem] ml-auto mr-auto col-span-2 bg-[#647299] rounded-lg border-b-4  text-white text-3xl border-b-[#424e74]" id="reset">RESET</button>     
+        <button class="btn h-[4.5rem] sm:hover:translate-y-1 active:border-b-0  transition-all w-[10.1rem] ml-auto mr-auto col-span-2 bg-[#d13f30] rounded-lg border-b-4  text-white  border-b-[#94271b]" id="=">=</button>     
+    </div>
+
+    
+
+    
+</body>
+<script src="/script.js"></script>
+</html>

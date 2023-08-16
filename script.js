@@ -34,6 +34,8 @@ function handleCalculation(expression) {
     let operators = ['+', '-', '/', 'x'];
     let operatorFound = true;
     let operator ='';
+
+
     while (operatorFound) {
         if (expression.search(/[+]/) != -1) {
             operatorFound = false;
@@ -48,7 +50,11 @@ function handleCalculation(expression) {
             operatorFound = false;
             operator = '/';
         }
+        break;
     }
+
+
+
     console.log(operator)
 
     let numbers = expression.split(operator);
